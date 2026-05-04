@@ -1,7 +1,8 @@
-import sys 
+import sys
 import os
 import yaml
 import flask
+import urllib
 
 app = flask.Flask(__name__)
 
@@ -52,7 +53,7 @@ if __name__ == '__main__':
     print("3. Yaml deserialization vulnerability:")
     print("4. Use of assert statements vulnerability:")
     choice  = input("Select vulnerability: ")
-    if choice == "1": 
+    if choice == "1":
         new_person = Person("Vickie")  
         print_nametag(input("Please format your nametag: "), new_person)
     elif choice == "2":
